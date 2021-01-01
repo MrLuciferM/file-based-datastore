@@ -29,6 +29,7 @@ test_data = {
     }
 }
 
+# CREATION TESTS
 status, message = ds1.Create('A',test_data['A'],20)
 print(f"Creating A {status}, {message} ")
 
@@ -46,6 +47,7 @@ print(f"Creating D {status}, {message} ")
 
 time.sleep(25)
 
+# READING TESTS
 status, message = ds1.Read('A')
 print(f"READING A {status}, {message}")
 
@@ -55,7 +57,7 @@ print(f"READING B {status}, {message}")
 status, message = ds1.Read('F')
 print(f"READING F {status}, {message}")
 
-
+# DELETION TESTS
 status, message = ds1.Delete('A')
 print(f"DELETING {status}A, {message}")
 
@@ -70,7 +72,7 @@ print(f"DELETING {status}F, {message}")
 # DB2 FOR SPECIFIED PATH
 
 
-
+# CREATION TESTS
 status, message = ds2.Create('A',test_data['A'],20)
 print(f"Creating A {status}, {message} ")
 
@@ -88,6 +90,7 @@ print(f"Creating D {status}, {message} ")
 
 time.sleep(20)
 
+# READING TESTS
 status, message = ds2.Read('A')
 print(f"READING A {status}, {message}")
 
@@ -98,6 +101,7 @@ status, message = ds2.Read('F')
 print(f"READING F {status}, {message}")
 
 
+# DELETION TESTS
 status, message = ds2.Delete('A')
 print(f"DELETING {status}A, {message}")
 

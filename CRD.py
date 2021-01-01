@@ -1,5 +1,4 @@
 import json
-import threading
 from sys import getsizeof
 import os
 import time
